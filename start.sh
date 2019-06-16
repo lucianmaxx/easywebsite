@@ -32,3 +32,6 @@ printf "\n"
 printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Send the direct link to target:\e[0m\e[1;77m %s \n' $send_link
 printf "\n"
 }
+
+banner
+start
