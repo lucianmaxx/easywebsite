@@ -17,10 +17,10 @@ start(){
 
 port="5872"
 
-  printf "\e[1;92m[\e[0m*\e[1;92m] Starting web service...\n"
+  printf "\e[1;92m[\e[0m*\e[1;92m] Contacting Serveo Tunnels...\n"
 cd site/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 & 
 sleep 2
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Starting server...\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Starting web server...\e[0m\n"
 command -v ssh > /dev/null 2>&1 || { echo >&2 "Require SSH but it's not installed. Install it. Aborting."; exit 1; }
 if [[ -e sendlink ]]; then
 rm -rf sendlink
