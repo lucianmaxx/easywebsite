@@ -14,7 +14,7 @@ printf "\n"
 
 start(){
 
-$port="5872"
+port="5872"
 
   printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
 cd site/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 & 
