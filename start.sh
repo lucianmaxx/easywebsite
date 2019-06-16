@@ -32,7 +32,6 @@ send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
 printf "\n"
 printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Send the direct link to target:\e[0m\e[1;77m %s \n' $send_link
 printf "\n"
-autossh -M 0 -R 80:localhost:'$port' serveo.net
 }
 
 banner
