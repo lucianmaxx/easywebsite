@@ -16,7 +16,9 @@ printf "\n"
 
 versioncheck(){
 curversion=0.1
-$(which sh) -c 'cat https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt 2> /dev/null > $version'
+$(which sh) -c 'cat https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt 2> /dev/null > version' &
+
+version=version
     if ($curversion == $version)
     then
       printf "\e[1;92m[\e[0m*\e[1;92m] No updates available...\n"
