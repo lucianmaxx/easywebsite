@@ -17,7 +17,7 @@ printf "\n"
 
 versioncheck(){
 
-$(which sh) -c 'curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt > version' &
+$(which sh) -c 'curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt 2> /dev/null > version' &
 printf "/n"
 
     if [[$curversion = $version]]
