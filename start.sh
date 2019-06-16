@@ -1,3 +1,5 @@
+version=0.1
+
 banner(){
 printf "\n"
 printf "\n"
@@ -12,6 +14,20 @@ printf "  \e[101m\e[1;77m:: responsible for any misuse or damage caused by our t
 printf "\n"
 
 }
+
+versioncheck(){
+
+    if [$version = curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt] then
+      start
+  else
+      
+      printf "  \e[101m\e[1;77m:: IMPORTANT UPDATE AVAILABLE    ::\e[0m\n"
+  printf "\e[1;92m[\e[0m*\e[1;92m] Skipping in 5 seconds...\n"
+  sleep 5
+  start
+  
+}
+
 
 start(){
 
@@ -41,4 +57,5 @@ done
 }
 
 banner
+versioncheck
 start
