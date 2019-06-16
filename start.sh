@@ -1,4 +1,4 @@
-version=0.1
+curversion=0.1
 
 banner(){
 printf "\n"
@@ -15,9 +15,11 @@ printf "\n"
 
 }
 
+version=curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt
+
 versioncheck(){
 
-    if [[$version = curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt]]
+    if [[$curversion = $version]]
     then
     
       start
