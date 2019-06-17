@@ -16,6 +16,13 @@ fixpermissions(){
 
 }
 
+runapp(){
+
+  /bin/bash ./script.sh
+
+}
+
 removefiles
 updatefiles
 fixpermissions
+runapp
