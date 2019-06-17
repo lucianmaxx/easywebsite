@@ -16,7 +16,7 @@ printf "\n"
 
 versioncheck(){
 clear
-curversion=0.3
+curversion=0.4
 version=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt)
 
 if [ "$version" == "$curversion" ]; then
