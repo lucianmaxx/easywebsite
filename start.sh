@@ -17,21 +17,9 @@ printf "\n"
 versioncheck(){
 curversion=0.1
 $(which sh) -c 'cat https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt 2> /dev/null > version' &
+printf $version
 
-version=version
-    if ($curversion = 0.1)
-    then
-      printf "\e[1;92m[\e[0m*\e[1;92m] No updates available...\n"
-      start
-      
-      else
-      
-  printf "  \e[101m\e[1;77m:: IMPORTANT UPDATE AVAILABLE    ::\e[0m\n"
-  printf "\e[1;92m[\e[0m*\e[1;92m] Skipping in 5 seconds...\n"
-  sleep 5
-  start
-  
-  fi
+
       
   
 }
@@ -59,7 +47,9 @@ printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Your website is running,\e[0m\e[1;77m Press Ctrl + C to stop...\e[0m\n"
 while [ true ]; do
 
-f
+
+sleep 10
+printf "\e[1;92m[\e[0m*\e[1;92m] Refreshing the Website\n"
 
 done
 }
