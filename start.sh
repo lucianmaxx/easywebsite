@@ -1,3 +1,7 @@
+# Changing credits wont make you a developer ! Official By Ironozd !
+# Licenced by ITU-GBLT
+# You cannot use the *script* for commercial use
+# You can forge to private repositorys
 
 banner(){
 printf "\n"
