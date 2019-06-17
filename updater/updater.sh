@@ -1,8 +1,5 @@
-test(){
+removefiles(){
   
-   printf 'Test Succesfull'
-
+  rm /start.sh
+  
 }
-
-
-test
