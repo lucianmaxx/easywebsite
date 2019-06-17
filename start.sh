@@ -58,7 +58,7 @@ while [ true ]; do
 
 
 sleep 10
-printf "\e[1;92m[\e[0m*\e[1;92m] Refreshing the Website\e[0m\n"
+printf "\e[1;92m[\e[0m*\e[1;92m] Refreshing the Website\e[0m\n" > /dev/null 2>&1
 
 done
 }
