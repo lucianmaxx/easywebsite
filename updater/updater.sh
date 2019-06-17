@@ -1,5 +1,5 @@
 removefiles(){
   
-  rm /start.sh
+  rm home/easywebsite/start.sh
   
 }
