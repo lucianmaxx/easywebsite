@@ -6,7 +6,7 @@ removefiles(){
 
 updatefiles(){
 
-  startsh=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/start.sh 2> ./start> start.sh)
+  startsh=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/start.sh 2> ./updatelog> start.sh)
   
 }
 
