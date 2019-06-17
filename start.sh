@@ -8,15 +8,15 @@ printf "\e[1;77m ▄█▄ ▀░▀▀ ▀▀▀▀ ▀░░▀ ▀▀▀▀ �
 printf "\n"
 printf "\e[1;93m       .:.:.\e[0m\e[1;77m WebHosting Tool coded by:  @Ironozd \e[0m\e[1;93m.:.:.\e[0m\n"
 printf "\n"
-printf "  \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and are not    ::\e[0m\n"
-printf "  \e[101m\e[1;77m:: responsible for any misuse or damage caused by our tool. ::\e[0m\n"
+printf "  \e[101m\e[1;77m:: Disclaimer: Developers have no responsibility of ::\e[0m\n"
+printf "  \e[101m\e[1;77m:: usage of this program. Use with this condition. ::\e[0m\n"
 printf "\n"
 
 }
 
 versioncheck(){
 clear
-curversion=0.2
+curversion=0.3
 version=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt)
 
 if [ "$version" == "$curversion" ]; then
