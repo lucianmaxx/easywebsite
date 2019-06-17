@@ -17,8 +17,15 @@ printf "\n"
 versioncheck(){
 curversion=0.1
 version=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt)
-printf 'Your current version is: %s ' $version
 
+if (version = curversion) then
+start
+
+else
+  printf "  \e[101m\e[1;77m:: IMPORTANT UPDATE AVAILABLE    ::\e[0m\n"
+  printf " Update started "
+sleep 5
+start
 
       
   
