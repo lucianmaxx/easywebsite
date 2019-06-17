@@ -35,7 +35,7 @@ startupdate
 
 startupdate(){
 
-  bash /updater/updater.sh
+  bash /bin/bash /updater/updater.sh
   exit
 
 }
