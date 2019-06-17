@@ -17,7 +17,7 @@ printf "\n"
 versioncheck(){
 curversion=0.1
 $(which sh) -c 'cat https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt 2> /dev/null > version' &
-printf -v version
+echo $version
 
 
       
@@ -49,7 +49,7 @@ while [ true ]; do
 
 
 sleep 10
-printf "\e[1;92m[\e[0m*\e[1;92m] Refreshing the Website\n"
+printf "\e[1;92m[\e[0m*\e[1;92m] Refreshing the Website\e[0m\n"
 
 done
 }
