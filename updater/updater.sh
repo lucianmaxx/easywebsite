@@ -11,3 +11,4 @@ updatefiles(){
 }
 
 removefiles
+updatefiles
