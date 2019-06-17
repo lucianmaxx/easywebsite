@@ -18,7 +18,7 @@ versioncheck(){
 curversion=0.1
 version=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt)
 
-if (version = curversion) then
+if [ "$version" == "$curversion" ]; then
 start
 
 else
