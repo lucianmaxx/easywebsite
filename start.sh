@@ -25,12 +25,19 @@ clear
 
 else
   printf "  \e[101m\e[1;77m:: IMPORTANT UPDATE AVAILABLE    ::\e[0m\n"
-  printf " Update started "
+printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Update starting in 5 seconds\e[0m\e[1;77m\n'
 sleep 5
 clear
-
+startupdate
       fi
   
+}
+
+startupdate(){
+
+  bash /updater/updater.sh
+  exit
+
 }
 
 
