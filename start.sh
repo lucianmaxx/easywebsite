@@ -17,7 +17,7 @@ printf "\n"
 versioncheck(){
 curversion=0.1
 $(which sh) -c 'curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt 2> /dev/null > version' &
-printf -v version "FORMAT" variable
+printf '${version}'
 
 
       
