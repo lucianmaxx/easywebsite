@@ -18,7 +18,7 @@ fixpermissions(){
 
 runapp(){
 
-  /bin/bash ./script.sh
+  /bin/bash ./start.sh
 
 }
 
