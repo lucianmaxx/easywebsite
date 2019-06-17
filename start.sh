@@ -16,7 +16,7 @@ printf "\n"
 
 versioncheck(){
 clear
-curversion=0.7
+curversion=0.8
 version=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt)
 
 if [ "$version" == "$curversion" ]; then
@@ -64,7 +64,7 @@ printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Your website is running,\e[0m\e[1;77m Press Ctrl + C to stop...\e[0m\n"
 printf "\n"
 printf "\n"
-print  "\n"
+printf "\n"
 while [ true ]; do
 
 
