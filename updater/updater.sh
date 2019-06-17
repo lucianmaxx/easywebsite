@@ -1,6 +1,6 @@
 removefiles(){
   
-  rm /home/easywebsite/start.sh
+  rm /easywebsite/start.sh
   
 }
 
