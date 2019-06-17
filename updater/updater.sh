@@ -10,5 +10,12 @@ updatefiles(){
   
 }
 
+fixpermissions(){
+
+  chmod 777 ./start.sh
+
+}
+
 removefiles
 updatefiles
+fixpermissions
