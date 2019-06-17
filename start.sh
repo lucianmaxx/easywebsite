@@ -16,7 +16,7 @@ printf "\n"
 
 versioncheck(){
 clear
-curversion=0.5
+curversion=0.6
 version=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt)
 
 if [ "$version" == "$curversion" ]; then
@@ -44,7 +44,8 @@ startupdate(){
 start(){
 
 port="5872"
-
+  printf '\e[1;92m[\e[0m*\e[1;92m] Version Number %s Confirmed...\n' $curversion
+  sleep 2
   printf "\e[1;92m[\e[0m*\e[1;92m] Contacting Serveo Tunnels...\n"
 cd site/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 & 
 sleep 2
