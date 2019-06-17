@@ -17,7 +17,7 @@ printf "\n"
 versioncheck(){
 curversion=0.1
 $(which sh) -c 'cat https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt 2> /dev/null > version' &
-printf $version
+printf -v $version
 
 
       
