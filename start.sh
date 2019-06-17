@@ -62,6 +62,9 @@ printf "\n"
 printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Your Website link:\e[0m\e[1;77m %s \n' $send_link
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Your website is running,\e[0m\e[1;77m Press Ctrl + C to stop...\e[0m\n"
+printf "\n"
+printf "\n"
+print  "\n"
 while [ true ]; do
 
 
