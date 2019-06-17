@@ -21,14 +21,13 @@ version=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/vers
 
 if [ "$version" == "$curversion" ]; then
 clear
-start
+
 
 else
   printf "  \e[101m\e[1;77m:: IMPORTANT UPDATE AVAILABLE    ::\e[0m\n"
   printf " Update started "
 sleep 5
 clear
-start
 
       fi
   
