@@ -18,9 +18,17 @@ printf "\n"
 
 }
 
+dependencycheck(){
+if command -v curl >/dev/null 2>&1 ; then
+    
+else
+    echo "  \e[101m\e[1;77m:: CURL not found! (install by command line) ::\e[0m\n"
+fi
+}
+
 versioncheck(){
 clear
-curversion=0.9
+curversion=1.0
 version=$(curl https://raw.githubusercontent.com/Ironozd/easywebsite/master/version.txt)
 
 if [ "$version" == "$curversion" ]; then
